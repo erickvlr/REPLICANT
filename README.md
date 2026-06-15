@@ -113,3 +113,96 @@ r!embeddemo
 
 Projeto experimental para fins educacionais e comunitários.
 Desenvolvido por Erickdev 
+
+# 🚀 Instalação
+
+## 1. Clone o repositório
+
+```bash
+git clone https://github.com/seuusuario/Replicant.git
+cd Replicant
+```
+
+## 2. Crie um ambiente virtual
+
+### Windows
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+## 3. Instale as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+## 4. Configure o arquivo `.env`
+
+Copie o arquivo de exemplo:
+
+```bash
+cp .env.example .env
+```
+
+ou no Windows:
+
+```bash
+copy .env.example .env
+```
+
+Depois preencha:
+
+- `DISCORD_TOKEN`
+- `OWNER_IDS`
+- `GUILD_ID`
+- `LLM_PROVIDER`
+- API Key do provedor escolhido (Ollama Cloud, OpenRouter, Groq ou outro)
+
+## ▶️ Executando
+
+Inicie o bot:
+
+```bash
+python main.py
+```
+
+Se tudo estiver correto, o console exibirá o banner do **REPLICANT** e o bot ficará online no Discord.
+
+# ⚙️ Configuração
+
+Toda a configuração é centralizada no arquivo `.env`.
+
+Provedores suportados:
+
+- Ollama Cloud
+- Ollama Local
+- OpenRouter
+- Groq
+- APIs OpenAI-Compatible
+
+Não é necessário alterar o código para trocar de modelo ou provedor, basta modificar o `.env`.
+
+# 💬 Como usar
+
+Após iniciar o bot:
+
+- Convide-o para o servidor.
+- Utilize o prefixo configurado (`r!` por padrão).
+- Digite:
+
+```text
+r!help
+```
+
+para visualizar todos os comandos disponíveis.
+
+O REPLICANT também responde automaticamente quando é mencionado ou quando identifica pedidos de ajuda, utilizando memória social, contexto da conversa e pesquisa silenciosa quando necessário.
